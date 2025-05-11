@@ -269,7 +269,13 @@ footer{
 }
 footer div{
   width: 300px;
-
+}
+.footer1{
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
 }
 @media (max-width: 568px) {
 
@@ -479,7 +485,7 @@ footer div{
   }
 }
 
-@media (min-width: 569px) and (max-width: 1024px) {
+@media (min-width: 569px) and (max-width: 1224px) {
 
   .header {
     gap: 20px;
@@ -531,8 +537,7 @@ footer div{
     padding: 15px;
   }
 
-  .card1,
-  .card2 {
+  .card1, .card2 {
     flex-direction: column;
     width: 250px;
     padding: 15px;
@@ -702,8 +707,7 @@ footer div{
     justify-content: center;
   }
 
-  .section8 img,
-  .section8 aside {
+  .section8 img, .section8 aside {
     width: 400px;
   }
 

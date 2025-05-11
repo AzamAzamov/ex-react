@@ -202,7 +202,7 @@ export default function App() {
       </section>
 
       <footer className='footer'>
-        <div>
+        <div className='footer1'>
 
 
         <div>
@@ -218,7 +218,7 @@ export default function App() {
         </div>
         <Card5 home1="Home" home2="Booking" home3="Facilities" home4="Location" home5="Contact"/>
         </div>
-        <div>
+        <div className='footer1'>
 
         <Card5 home1="Help" home2="About Us" home3="Help center" home4="Privacy policy" home5="FAQs"/>
         <Card5 home1="Get the app" home2="iOS app" home3="Android app" home4="Location" home5="Contact"/>
