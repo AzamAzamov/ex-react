@@ -9,6 +9,7 @@ import menu from '@/assets/menu.png'
 import calendar from '@/assets/calendar 1.png'
 import person from '@/assets/person 1.png'
 import search from '@/assets/search-outline 1.png'
+import search1 from '@/assets/search 1.png'
 import pin from '@/assets/pin 1.png'
 
 import image1 from '@/assets/image (14).png'
@@ -22,7 +23,10 @@ import group1 from '@/assets/Group 78.png'
 import group2 from '@/assets/Group 79.png'
 import group3 from '@/assets/Group 80.png'
 import group4 from '@/assets/Group 81.png'
-import group5 from '@/assets/Group 50.png'
+// import group5 from '@/assets/Group 50.png'
+import Group6 from '@/assets/Group 19.png'
+import Group7 from '@/assets/Group 23.png'
+import Group8 from '@/assets/Group 24.png'
 import rectangle from '@/assets/Rectangle 847.png'
 import rectangle1 from '@/assets/Rectangle 846.png'
 
@@ -31,6 +35,7 @@ import a2 from '@/assets/a2.png'
 import a3 from '@/assets/a3.png'
 import a4 from '@/assets/a4.png'
 import a5 from '@/assets/a5.png'
+
 
 
 
@@ -183,18 +188,42 @@ export default function App() {
         </div>
       </section>
 
-      <section className='section8' style={{backgroundColor:"#E8E9EB"}}>
+      <section className='section8' style={{ backgroundColor: "#E8E9EB" }}>
 
         <aside>
           <h1>Subscribe for our mailing list to get latest updates and offers</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-          <div style={{backgroundColor:"white",width:"300px",height:"20px",borderRadius:"20px",padding:"10px 10px",display:"flex",gap:"10px",alignItems:"center",justifyContent:"space-between"}}>
+          <p style={{color:"gray",fontSize:"20px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+          <div style={{ backgroundColor: "white", width: "300px", height: "20px", borderRadius: "20px", padding: "10px 10px", display: "flex", gap: "10px", alignItems: "center", justifyContent: "space-between" }}>
             <p>Enter your email</p>
-            <button style={{backgroundColor:"#3771C8",borderRadius:"20px",color:"white",border:"0",height:"40px"}}>Subscribe</button>
+            <button style={{ backgroundColor: "#3771C8", borderRadius: "20px", color: "white", border: "0", height: "40px" }}>Subscribe</button>
           </div>
         </aside>
         <img src={image6} alt="" />
       </section>
+
+      <footer className='footer'>
+        <div>
+
+
+        <div>
+          <img src={Group6} alt="" />
+          <p style={{color:"gray"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
+            <img src={Group7} alt="" />
+            <img src={Group8} alt="" />
+            <img src={search1} alt="" />
+          </div>
+
+
+        </div>
+        <Card5 home1="Home" home2="Booking" home3="Facilities" home4="Location" home5="Contact"/>
+        </div>
+        <div>
+
+        <Card5 home1="Help" home2="About Us" home3="Help center" home4="Privacy policy" home5="FAQs"/>
+        <Card5 home1="Get the app" home2="iOS app" home3="Android app" home4="Location" home5="Contact"/>
+        </div>
+      </footer>
 
 
 
@@ -249,3 +278,14 @@ function Card4(props) {
   )
 }
 
+function Card5(props) {
+  return (
+    <div style={{color:"gray"}}>
+      <h1 style={{color:"black"}}>{props.home1}</h1>
+      <p>{props.home2}</p>
+      <p>{props.home3}</p>
+      <p>{props.home4}</p>
+      <p>{props.home5}</p>
+    </div>
+  )
+}
